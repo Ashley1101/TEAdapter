@@ -1,0 +1,44 @@
+{
+  "musiccaps": "data/musiccaps",
+  "FMA-intro": "data/FMA",
+  "FMA-chorus": "data/FMA",
+  "FMA-outro": "data/FMA",
+  "comments":{
+  },
+
+  "metadata":{
+      "path": {
+          "musiccaps":{
+              "train": "data/metadata/musiccaps/datafiles/musiccaps_train_label.json", 
+              "test": "data/metadata/musiccaps/datafiles/musiccaps_test_label.json",
+              "val": "data/metadata/musiccaps/datafiles/musiccaps_val_label.json",
+              "class_label_indices": "data/metadata/musiccaps/class_labels_indices.csv",
+              "beat_start_end": "data/metadata/musiccaps/datafiles/beat_start_end.json",
+              "train_chord": "data/metadata/musiccaps/datafiles/musiccaps_chord_train_label.json", 
+              "test_chord": "data/metadata/musiccaps/datafiles/musiccaps_chord_test_label.json",
+              "val_chord": "data/metadata/musiccaps/datafiles/musiccaps_chord_val_label.json",
+              "train_melody": "data/metadata/musiccaps/datafiles/musiccaps_melody_train_label+instrument.json", 
+              "test_melody": "data/metadata/musiccaps/datafiles/musiccaps_melody_test_label+instrument.json",
+              "val_melody": "data/metadata/musiccaps/datafiles/musiccaps_melody_val_label+instrument.json"
+          },
+          "FMA-intro":{
+            "train": "data/metadata/FMA/datafiles/FMA-intro_train_label.json", 
+            "val": "data/metadata/FMA/datafiles/FMA-intro_val_label.json",
+            "train_melody": "data/metadata/FMA/datafiles/FMA-intro_melody_train_label.json", 
+            "val_melody": "data/metadata/FMA/datafiles/FMA-intro_melody_val_label.json"
+          },
+          "FMA-chorus":{
+            "train": "data/metadata/FMA/datafiles/FMA-chorus_train_label.json", 
+            "val": "data/metadata/FMA/datafiles/FMA-chorus_val_label.json",
+            "train_melody": "data/metadata/FMA/datafiles/FMA-chorus_melody_train_label.json", 
+            "val_melody": "data/metadata/FMA/datafiles/FMA-chorus_melody_val_label.json"
+          },
+          "FMA-outro":{
+            "train": "data/metadata/FMA/datafiles/FMA-outro_train_label.json", 
+            "val": "data/metadata/FMA/datafiles/FMA-outro_val_label.json",
+            "train_melody": "data/metadata/FMA/datafiles/FMA-outro_melody_train_label.json", 
+            "val_melody": "data/metadata/FMA/datafiles/FMA-outro_melody_val_label.json"
+          }
+      }
+  }
+}

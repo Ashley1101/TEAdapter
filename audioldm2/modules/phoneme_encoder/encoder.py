@@ -4,8 +4,8 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-import audioldm_train.modules.phoneme_encoder.commons as commons
-import audioldm_train.modules.phoneme_encoder.attentions as attentions
+import audioldm2.modules.phoneme_encoder.commons as commons
+import audioldm2.modules.phoneme_encoder.attentions as attentions
 
 
 class TextEncoder(nn.Module):

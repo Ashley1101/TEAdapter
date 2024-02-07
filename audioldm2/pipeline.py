@@ -3,9 +3,9 @@ import numpy as np
 import yaml
 import torch
 import torchaudio
-from audioldm2.latent_diffusion.models.ddpm import LatentDiffusion
+from audioldm2.modules.latent_diffusion.models.ddpm import LatentDiffusion
 from audioldm2.utils import default_audioldm_config, download_checkpoint, random_uniform, normalize_wav, wav_feature_extraction, build_dsp
-from audioldm2.latent_diffusion.modules.extra_condition.Chord_Progressions.chord_progressions.extract.audio import extract_progression_from_audio
+from TEAdapter.chord_extraction.chord_progressions.chord_progressions.extract.audio import extract_progression_from_audio
 # from audioldm2.latent_diffusion.modules.extra_condition.api import ExtraCondition
 
 # CACHE_DIR = os.getenv(

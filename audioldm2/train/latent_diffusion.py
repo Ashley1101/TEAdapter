@@ -16,21 +16,21 @@ import torch
 
 from tqdm import tqdm
 from pytorch_lightning.strategies.ddp import DDPStrategy
-from audioldm_train.modules.latent_diffusion.ddpm import LatentDiffusio
-from audioldm_train.utilities.data.dataset import AudioDataset
+from audioldm2.modules.latent_diffusion.models.ddpm import LatentDiffusio
+from audioldm2.utilities.data.dataset import AudioDataset
 
 from torch.utils.data import WeightedRandomSampler
 from torch.utils.data import DataLoader
 from pytorch_lightning import Trainer, seed_everything
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import WandbLogger
-from audioldm_train.utilities.tools import (
+from audioldm2.utilities.tools import (
     listdir_nohidden,
     get_restore_step,
     copy_test_subset_data,
 )
 import wandb
-from audioldm_train.utilities.model_util import instantiate_from_config
+from audioldm2.utils import instantiate_from_config
 import logging
 
 logging.basicConfig(level=logging.WARNING)
@@ -213,7 +213,7 @@ if __name__ == "__main__":
         type=str,
         required=False,
         help="path to config .yaml file",
-        default='audioldm_train/config/2023_08_23_reproduce_audioldm/audioldm_crossattn_flant5.yaml'
+        default='audioldm2/config/2023_08_23_reproduce_audioldm/audioldm_crossattn_flant5.yaml'
     )
 
     parser.add_argument("--val", action="store_true")

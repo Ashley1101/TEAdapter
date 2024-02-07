@@ -1,6 +1,6 @@
 import torch
 
-import audioldm2.hifigan as hifigan
+import audioldm2.modules.hifigan as hifigan
 
 
 def get_vocoder_config():
